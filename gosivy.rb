@@ -2,21 +2,21 @@
 class Gosivy < Formula
   desc "Real-time visualization tool for Go application diagnosis"
   homepage "https://github.com/nakabonne/gosivy"
-  version "0.1.0"
+  version "0.1.1"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/nakabonne/gosivy/releases/download/v0.1.0/gosivy_0.1.0_darwin_amd64.tar.gz"
-    sha256 "355e0885330e2ede076615c69376ee6ca772d9c3cbaaeb8e2aa38b0f78c78bfb"
+    url "https://github.com/nakabonne/gosivy/releases/download/v0.1.1/gosivy_0.1.1_darwin_amd64.tar.gz"
+    sha256 "fe867ec6afab1b14c7f41923db8a90c34ae001b6ab097bb08e47deca0684a258"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/nakabonne/gosivy/releases/download/v0.1.0/gosivy_0.1.0_linux_amd64.tar.gz"
-      sha256 "12642db9864d6256c6207f3b5aba15156133f71c136354b20054623f9bfec514"
+      url "https://github.com/nakabonne/gosivy/releases/download/v0.1.1/gosivy_0.1.1_linux_amd64.tar.gz"
+      sha256 "6a43daf330674ec8b01c94204e72c1487cf0825a7d4ffc37938bfc652d11cc28"
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/nakabonne/gosivy/releases/download/v0.1.0/gosivy_0.1.0_linux_arm64.tar.gz"
-        sha256 "979c52c06a76e144ba2a548b68d41903a51f05ae4f548894faf36a851bd2a86d"
+        url "https://github.com/nakabonne/gosivy/releases/download/v0.1.1/gosivy_0.1.1_linux_arm64.tar.gz"
+        sha256 "3217ea950686e1be95af71cc7d79b165c579ae92a11c88a48df0456feb496c56"
       else
       end
     end
